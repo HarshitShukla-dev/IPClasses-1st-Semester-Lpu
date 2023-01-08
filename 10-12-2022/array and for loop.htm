@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array and for loop</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <p id="array"></p>
+
+        <script>
+            const name = ["smriti","Harsh","anuj","Saras"];
+            var test = '';
+            var i;
+
+            for (i=0; i< name.length; i++){
+                test += name[i] + "<br>";
+            }
+
+            document.getElementById('array').innerHTML = test;
+        </script>
+    </body>
+</html>

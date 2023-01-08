@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>conditional statements</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="test"></p>
+        <p id="lw"></p>
+        <script>
+            var marks = 85;
+            if (marks >= 80){
+                document.getElementById("test").innerHTML = 'A grade';
+            }
+            else if(marks >= 60 && marks < 80){
+                document.getElementById("test").innerHTML = 'B grade';
+            }
+            else{
+                document.getElementById("test").innerHTML = 'C grade';
+            }
+
+
+            var i = 0;
+            var j = "";
+            while(i<=10){
+                j += i + "<br>"
+                i++;
+            }
+            document.getElementById("lw").innerHTML = j ;
+
+            
+        </script> 
+    </body>
+</html>

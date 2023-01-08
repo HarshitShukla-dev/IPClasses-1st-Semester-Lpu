@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+    </head>
+    <body>
+
+        <form>
+            Email: <input type="text" id="email" placeholder="Enter Email">
+            Password: <input type="password" id="pass" placeholder="Enter Password" required>
+            <button type="button" id="btn">Login</button>
+        </form>
+
+        <script>
+            var emailEntered = document.getElementById('email');
+            var passEntered = document.getElementById('pass');
+
+            var button = document.getElementById('btn');
+
+            button.addEventListener('click',function(){
+                var email = emailEntered.value;
+                var password = passEntered.value;
+
+                var correctEmail = "smritishukla@lpu.in";
+                var correctPass = "secret@";
+
+                if (email === correctEmail && password === correctPass){
+                    window.open();
+                }
+                else{
+                    alert("Wrong id/pass")
+                }
+            })
+
+        </script>
+
+    </body>
+</html>
